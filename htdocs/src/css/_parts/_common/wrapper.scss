@@ -1,0 +1,143 @@
+/* --------------------------------------------------------------------------------
+*
+*   html,body
+*
+-------------------------------------------------------------------------------- */
+
+html,body {
+  
+}
+
+html {
+  
+  // baseフォント
+  color: $font-color;
+  font-size: $fz + px;
+  font-family: $font;
+  font-weight: $fw;  
+  
+  letter-spacing: $ls;
+  
+  // 背景
+  background-color: $bg-color;
+  // background: url(../resource/svg/common/bg.svg) no-repeat;
+  // background-size: cover;
+  // background-position: center center;
+
+  // sp対策
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  
+  @if $visible == true { opacity: 1; }
+  @else { opacity: 0; } 
+  
+  @if $sp_select == true { -webkit-tap-highlight-color:rgba(0,0,0,0); }
+
+  @if $hidden == true { overflow: hidden; }
+
+  // other
+  // backface-visibility: hidden; //CSS 3D Transformsによる3次元の裏側を描画するかしないか　visible or hidden  
+  -webkit-font-smoothing: antialiased; //太く、細く
+  // text-rendering: auto; // web fontカーニング指定
+  // -webkit-font-smoothing: antialiased;
+
+  /*
+  *
+  *   media query   
+  *
+  */
+  // media query
+
+  @include media-max('sp-s') {
+    
+    $fz: 8;
+    font-size: $fz + px;
+        
+  }
+  // @media only screen and (max-height: 480px) {
+    
+  //   $fz: 7;
+  //   font-size: $fz + px;
+        
+  // }
+  // @include media-max('sp-s') {
+    
+  //   $fz: 4;
+  //   font-size: $fz + px;
+        
+  // }
+
+}
+
+body {
+
+  overflow-x: hidden;
+
+
+  /*
+  *
+  *   media query   
+  *
+  */
+  @include media-max('sp') {
+        
+  }
+
+}
+
+/* --------------------------------------------------------------------------------
+*
+*   #wrapper #inner
+*
+-------------------------------------------------------------------------------- */
+#wrapper,#inner {
+  
+  
+}
+
+#wrapper {
+
+  z-index: z(wrapper);
+  font-size: rem($deffz ,$fz);
+  overflow: hidden;
+      
+  /*
+  *
+  *   media query   
+  *
+  */
+  @include media-max('sp') {
+
+    
+  }
+
+}
+.isDeviceSP #wrapper {
+
+  // @include media-max('sp') {
+
+    // height: calc(100vh);
+    // overflow: scroll;
+    // -webkit-overflow-scrolling: touch;
+    
+  // }
+
+}
+#inner {
+
+
+}
+
+/* --------------------------------------------------------------------------------
+*
+*   .wrapper .inner
+*
+-------------------------------------------------------------------------------- */
+.wrapper {
+  
+  
+}
+
+.inner {
+  
+}

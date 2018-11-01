@@ -1,0 +1,47 @@
+{
+                           
+    "common": {
+        "tit": "",
+        "des": "",
+        "img": "",
+        "url": "",
+        "adress": ""
+    },
+                     
+    "top": {
+        "tit": "",
+        "des": "",
+        "keyword": "",
+        "fb": {
+            "tit": "",
+            "des": "",
+            "img": "",
+            "url": "",
+            "siteName": "",
+            "type": "website"
+        },
+        "tw": {
+            "tit": "",
+            "des": "",
+            "img": "",
+            "url": "",
+            "siteName": "",
+            "creator": "",
+            "card": "summary_large_image",
+            "hash": "",
+            "text": ""
+        },
+        "line": {
+            "tit": "",
+            "des": "",
+            "img": "",
+            "url": "",
+            "text": ""
+        },
+        "mail": {
+            "tit": "",
+            "des": "",
+            "adress": ""
+        }
+    }
+}

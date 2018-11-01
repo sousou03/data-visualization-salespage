@@ -1,0 +1,91 @@
+/* --------------------------------------------------------------------------------
+*
+*   loading
+*
+-------------------------------------------------------------------------------- */
+#loading {
+  
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  
+  width: 100%;
+  height: 100vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  // opacity: 0;
+  // display: none;
+  
+  .box {
+    
+    position: relative;
+    z-index: 2;
+    
+    .title {
+
+      margin-bottom: rem(9 ,$fz);
+      
+      svg {
+        width: rem(130 ,$fz);
+        height: rem(9 ,$fz);        
+      }
+    }
+    .name_en {
+
+      margin-bottom: rem(9 ,$fz);
+      
+      svg {
+        width: rem(254 ,$fz);
+        height: rem(13 ,$fz);        
+      }
+    }
+    .name_ja {
+      svg {
+        width: rem(62 ,$fz);
+        height: rem(14 ,$fz);        
+      }
+    }
+
+    .svgWrap {
+      display: inline-block;
+      position: relative;
+      
+      .mask {
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        width: 0%;
+        height: 120%;
+        background: #fff;
+      }
+    }
+    .svgInner {
+      // opacity: 0;
+    }
+  }
+
+
+}
+
+// ios用
+.isIOSSafari #loading {
+  
+  .box {
+    
+    // media query
+    @include media-max('sp') {
+
+      margin-top: -60px;
+
+    }
+    
+  }
+}
+
+.id_top #loading {
+  display: block;
+}

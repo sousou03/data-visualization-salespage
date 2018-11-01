@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+/* --------------------------------------------------------------------------------
+*
+*   section
+*
+-------------------------------------------------------------------------------- */
+.section {
+  
+  
+}
+
+
+/* --------------------------------------------------------------------------------
+*
+*   btn
+*
+-------------------------------------------------------------------------------- */
+.btn {
+	border: 1px solid rgba(84,45,113,.5);
+
+	width: vw375Half(543);
+	height: vw375Half(134);
+	
+	position: relative;
+	margin: 0 auto;
+	
+	background: url(../resource/img_sp/material/pattern_purple.png);
+	background-size: 200px 200px; 
+	
+	.btnInner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+
+		border: 1px solid #d6bc6e;
+	}
+
+	.text {
+		display: flex;
+		svg {
+			width: vw375Half(84);
+			height: vw375Half(34);
+			
+			path {
+				stroke: #542d71;
+				stroke-width: 0.2px;
+			}
+		}				
+	}
+	.icon {
+		position: absolute;
+		right: vw375(20);
+		display: flex;
+		svg {
+			width: vw375Half(30);
+			height: vw375Half(24);
+		}		
+	}
+
+	@include min(769) {
+
+		background: url(../resource/img_sp/material/pattern_purple.png);
+		background-size: 400px 400px; 
+		
+		width: vw(354px, 1440px);
+		height: vw(88px, 1440px);
+		
+		.text {			
+			svg {
+				width: vw(54px, 1440px);
+				height: vw(22px, 1440px);
+			}
+		}
+		.icon {
+			right: vw(40px, 1440px);
+			svg {
+				width: vw(22px, 1440px);
+				height: vw(18px, 1440px);
+			}		
+		}
+
+	}
+
+}
+
+.btn.btnStore {
+
+	width: vw375Half(624);
+	height: auto;
+	margin-bottom: vw375(17);
+	
+	.btnInner {
+		padding: vw375(20) 0 vw375(10);
+		
+		justify-content: flex-start;
+		align-items: center;
+		padding-left: vw375(20);
+	}
+	
+	.btnIn {
+		.titWrap {
+			align-items: center;
+			.tit {
+				margin: 0;
+			    margin-right: vw375(10);
+			    display: flex;
+			}
+			.text {
+				font-family: 'noto_demiLight';
+				font-size: vw375(11);
+				color: #D6BC6E;
+				
+				text-shadow: 
+				  rgba(84,45,113,.1) 1px 0px,  rgba(84,45,113,.1) -1px 0px,
+				  rgba(84,45,113,.1) 0px -1px, rgba(84,45,113,.1) 0px 1px,
+				  rgba(84,45,113,.1) 1px 1px , rgba(84,45,113,.1) -1px 1px,
+				  rgba(84,45,113,.1) 1px -1px, rgba(84,45,113,.1) -1px -1px,
+				  rgba(84,45,113,.1) 1px 1px,  rgba(84,45,113,.1) -1px 1px,
+				  rgba(84,45,113,.1) 1px -1px, rgba(84,45,113,.1) -1px -1px,
+				  rgba(84,45,113,.1) 1px 1px,  rgba(84,45,113,.1) -1px 1px,
+				  rgba(84,45,113,.1) 1px -1px, rgba(84,45,113,.1) -1px -1px;
+				
+			}
+		}
+		.bar {
+			border: 1px solid rgba(84,45,113,.5);
+			height: 1px;
+			width: 100%;
+			background-color: #D6BC6E;
+			
+			margin: vw375(11) 0 vw375(8);
+		}
+		& > .text {
+			font-family: 'noto_demiLight';
+			font-size: vw375(11);
+			color: #D6BC6E;
+			line-height: 1.72;
+			
+			text-align: left;
+			
+			text-shadow: 
+			  rgba(84,45,113,.1) 1px 0px,  rgba(84,45,113,.1) -1px 0px,
+			  rgba(84,45,113,.1) 0px -1px, rgba(84,45,113,.1) 0px 1px,
+			  rgba(84,45,113,.1) 1px 1px , rgba(84,45,113,.1) -1px 1px,
+			  rgba(84,45,113,.1) 1px -1px, rgba(84,45,113,.1) -1px -1px,
+			  rgba(84,45,113,.1) 1px 1px,  rgba(84,45,113,.1) -1px 1px,
+			  rgba(84,45,113,.1) 1px -1px, rgba(84,45,113,.1) -1px -1px,
+			  rgba(84,45,113,.1) 1px 1px,  rgba(84,45,113,.1) -1px 1px,
+			  rgba(84,45,113,.1) 1px -1px, rgba(84,45,113,.1) -1px -1px;
+		}
+	}
+	&.long {
+		.btnIn {
+			.titWrap {
+				flex-direction: column;
+				align-items: flex-start;
+				.tit {
+					margin-bottom: vw375(9);
+					@include min(769) {
+
+						margin-bottom: vw(15px, 1440px);
+						
+					}
+				}
+			}
+		}
+	}
+
+	.icon {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	@include min(769) {
+
+		width: vw(453px, 1440px);
+		height: vw(202px, 1440px);
+		flex: 0 0 vw(453px, 1440px);
+		margin: 0;
+		margin-bottom: vw(30px, 1440px);
+		
+		.btnInner {
+			padding: vw(33px, 1440px) 0 vw(25px, 1440px);
+			padding-left: vw(37px, 1440px);
+			
+			justify-content: flex-start;
+			align-items: center;
+		}
+		
+		.btnIn {
+
+			flex: 0 0 80%;
+			
+			.titWrap {
+				.tit {
+				    margin-right: vw(20px, 1440px);
+				}
+				.text {
+					font-size: vw(16px, 1440px);
+				}
+			}
+			.bar {
+				margin: vw(21px, 1440px) 0 vw(14px, 1440px);
+			}
+			& > .text {
+				font-size: vw(15px, 1440px);
+				line-height: 1.86;
+				
+			}
+		}
+		.icon {
+			right: vw(30px, 1440px);
+		}
+
+	}
+}
