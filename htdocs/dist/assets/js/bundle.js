@@ -3881,7 +3881,7 @@ var _gsScope = (typeof(module) !== "undefined" && module.exports && typeof(globa
 	 * @copyright Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors (Conversion to ES6 API by Jake Archibald)
 	 * @license   Licensed under MIT license
 	 *            See https://raw.githubusercontent.com/stefanpenner/es6-promise/master/LICENSE
-	 * @version   v4.2.4+314e4831
+	 * @version   v4.2.5+7f2b526d
 	 */
 	
 	(function (global, factory) {
@@ -4987,15 +4987,19 @@ var _gsScope = (typeof(module) !== "undefined" && module.exports && typeof(globa
 	    var promise = this;
 	    var constructor = promise.constructor;
 	
-	    return promise.then(function (value) {
-	      return constructor.resolve(callback()).then(function () {
-	        return value;
+	    if (isFunction(callback)) {
+	      return promise.then(function (value) {
+	        return constructor.resolve(callback()).then(function () {
+	          return value;
+	        });
+	      }, function (reason) {
+	        return constructor.resolve(callback()).then(function () {
+	          throw reason;
+	        });
 	      });
-	    }, function (reason) {
-	      return constructor.resolve(callback()).then(function () {
-	        throw reason;
-	      });
-	    });
+	    }
+	
+	    return promise.then(callback, callback);
 	  };
 	
 	  return Promise;
@@ -7830,15 +7834,15 @@ var _gsScope = (typeof(module) !== "undefined" && module.exports && typeof(globa
 	    key: 'setup',
 	    value: function setup() {
 	
-	      // yt.player��load����Ƥ��ʤ����Ϥ򿼑]����
+	      // yt.player��load�����Ƥ��ʤ����Ϥ򿼑]����
 	      if (typeof YT !== "undefined" && YT && YT.Player) {
 	
 	        gb.player = this.player = new YT.Player(this.id, {
-	          width: '100%', // �ץ�`��`�η�
-	          height: '100%', // �ץ�`��`�θߤ�
+	          width: '100%', // �ץ��`���`�η�
+	          height: '100%', // �ץ��`���`�θߤ�
 	          videoId: this.videoID, // YouTube��ID
 	          events: {
-	            'onReady': this.onReady.bind(this), // �ץ�`��`�Μʂ䤬�Ǥ����Ȥ��ˌg��
+	            'onReady': this.onReady.bind(this), // �ץ��`���`�Μʂ䤬�Ǥ����Ȥ��ˌg��
 	            'onStateChange': this.onPlayerStateChange.bind(this)
 	          },
 	          playerVars: {
@@ -7886,9 +7890,9 @@ var _gsScope = (typeof(module) !== "undefined" && module.exports && typeof(globa
 	      // if (status == window.YT.PlayerState.PAUSED) {
 	      //     console.log('ֹͣ��');
 	      // }
-	      // // �Хåե�����ФΤȤ�
+	      // // �Хåե��������ФΤȤ�
 	      // if (status == window.YT.PlayerState.BUFFERING) {
-	      //     console.log('�Хåե������');
+	      //     console.log('�Хåե���������');
 	      // }
 	      // // �^�����g�ߤΤȤ�
 	      // if (status == window.YT.PlayerState.CUED) {
@@ -7929,14 +7933,14 @@ var _gsScope = (typeof(module) !== "undefined" && module.exports && typeof(globa
 	      //     var currentVol = this.player.getVolume();
 	      //     this.player.setVolume(currentVol - 10);
 	      // });
-	      // // �ߥ�`��
+	      // // �ߥ��`��
 	      // $('#mute').click(()=>{
-	      //     // �ߥ�`�Ȥ���Ƥ��뤫�ɤ���
+	      //     // �ߥ��`�Ȥ����Ƥ��뤫�ɤ���
 	      //     if(this.player.isMuted()) {
-	      //         // �ߥ�`�Ȥν��
+	      //         // �ߥ��`�Ȥν���
 	      //         this.player.unMute();
 	      //     } else {
-	      //         // �ߥ�`��
+	      //         // �ߥ��`��
 	      //         this.player.mute();
 	      //     }
 	      // });

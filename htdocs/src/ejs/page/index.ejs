@@ -12,11 +12,15 @@
 <div id="wrapper" class="id_<%- page %>">
 <div id="inner">
 
-	<%- include('../../../dist/assets/resource/svg/assets.svg'); %>
-
 	<%- include(rootPATH + 'parts/common/_header', {page:page, PATH: PATH}); %>
 
-	<%- include(contentsPATH + '_section01', {page:page, PATH: PATH}); %>
+  <div class="canvasWrap"></div>
+
+  <%- include(contentsPATH + '_section01', {page:page, PATH: PATH}); %>
+  <%- include(contentsPATH + '_section02', {page:page, PATH: PATH}); %>
+  <%- include(contentsPATH + '_section03', {page:page, PATH: PATH}); %>
+  <%- include(contentsPATH + '_section04', {page:page, PATH: PATH}); %>
+	<%- include(contentsPATH + '_section05', {page:page, PATH: PATH}); %>
 
 	<%- include(rootPATH + 'parts/common/_footer', {page:page, PATH: PATH}); %>
 

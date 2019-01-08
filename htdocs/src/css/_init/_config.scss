@@ -65,48 +65,41 @@ $fw: 400;
     // $font: '游明朝','YuMincho', 'ヒラギノ明朝 Pro W6', 'Hiragino Mincho Pro', 'HGS明朝E', 'ＭＳ Ｐ明朝', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', sans-serif;
   }
 
-  @if $fonttype == 'webfont' { 
-
-    // @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);  
-    // $font:  'Noto Sans Japanese';
-    
-    // %noto_thin {
-    //   font-family: 'Noto Sans Japanese';
-    //   font-style: normal;
-    //   font-weight: 100;
-    // }
-    // %noto_light {
-    //   font-family: 'Noto Sans Japanese';
-    //   font-style: normal;
-    //   font-weight: 200;
-    // }
-    // %noto_demiLight {
-    //    font-family: 'Noto Sans Japanese';
-    //    font-style: normal;
-    //    font-weight: 300;
-    // }
-    // %noto_regular {
-    //    font-family: 'Noto Sans Japanese';
-    //    font-style: normal;
-    //    font-weight: 400;
-    //  }
-    // %noto_medium {
-    //    font-family: 'Noto Sans Japanese';
-    //    font-style: normal;
-    //    font-weight: 500;
-    //  }
-    // %noto_bold {
-    //    font-family: 'Noto Sans Japanese';
-    //    font-style: normal;
-    //    font-weight: 700;
-    //  }
-    // %noto_black {
-    //    font-family: 'Noto Sans Japanese';
-    //    font-style: normal;
-    //    font-weight: 900;
-    //  }
-  
+  %Josefin_thin {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 100;
   }
+  %Josefin_light {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+  }
+  %Josefin_demiLight {
+     font-family: 'Josefin Sans', sans-serif;
+     font-style: normal;
+     font-weight: 300;
+  }
+  %Josefin_regular {
+     font-family: 'Josefin Sans', sans-serif;
+     font-style: normal;
+     font-weight: 400;
+   }
+  %Josefin_medium {
+     font-family: 'Josefin Sans', sans-serif;
+     font-style: normal;
+     font-weight: 500;
+   }
+  %Josefin_bold {
+     font-family: 'Josefin Sans', sans-serif;
+     font-style: normal;
+     font-weight: 700;
+   }
+  %Josefin_black {
+     font-family: 'Josefin Sans', sans-serif;
+     font-style: normal;
+     font-weight: 900;
+   }
 
 
 /* --------------------------------------------------------------------------------
