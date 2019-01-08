@@ -7,5 +7,40 @@
 -------------------------------------------------------------------------------- */
 .section01 {
 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+  .scroll {
+    position: absolute;
+    bottom: 87px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .bar {
+      width: 3px;
+      height: 50px;
+      background: #fff;
+      margin-bottom: 13px;
+    }
+  }
 
+
+}
+
+.section02 {
+  display: flex;
+  position: relative;
+  
+  .block {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }

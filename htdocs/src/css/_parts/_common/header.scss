@@ -5,4 +5,20 @@
 -------------------------------------------------------------------------------- */
 #header {
 
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  .inner {
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    
+    .menu {
+      .item {
+        margin-right: 40px;
+      }
+    }
+  }
 }

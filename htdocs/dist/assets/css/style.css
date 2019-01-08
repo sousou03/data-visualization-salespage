@@ -552,6 +552,32 @@ img
 *   header
 *
 -------------------------------------------------------------------------------- */
+#header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+}
+
+#header .inner
+{
+    padding-top: 40px;
+
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+#header .inner .menu .item
+{
+    margin-right: 40px;
+}
+
 /* --------------------------------------------------------------------------------
 *
 *   html,body
@@ -567,7 +593,7 @@ html
 
     opacity: 1;
     color: #000;
-    background-color: #fff;
+    background-color: #ccc;
 
     -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
@@ -623,6 +649,12 @@ body
 *   .wrapper .inner
 *
 -------------------------------------------------------------------------------- */
+.inner
+{
+    width: 940px;
+    margin: 0 auto;
+}
+
 /* --------------------------------------------------------------------------------
 *
 *   link
@@ -1281,4 +1313,71 @@ body.no-select
 *   section01
 *
 -------------------------------------------------------------------------------- */
+}
+
+#wrapper.id_top .section
+{
+    height: 100vh;
+}
+
+#wrapper.id_top .section01
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+
+#wrapper.id_top .section01 .scroll
+{
+    position: absolute;
+    bottom: 87px;
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column;
+
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+
+#wrapper.id_top .section01 .scroll .bar
+{
+    width: 3px;
+    height: 50px;
+    margin-bottom: 13px;
+
+    background: #fff;
+}
+
+#wrapper.id_top .section02
+{
+    position: relative;
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+
+#wrapper.id_top .section02 .block
+{
+    width: 940px;
+    margin: 0 auto;
+}
+
+#wrapper.id_top .section02 .img
+{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
