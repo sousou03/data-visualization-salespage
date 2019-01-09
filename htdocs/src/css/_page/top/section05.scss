@@ -10,6 +10,10 @@
   border-top: 2px solid;
   position: relative;
   
+  display: flex;
+  align-items: center;
+
+  
   .bg {
     position: absolute;
     left: 0;
@@ -23,7 +27,6 @@
   .block {
     width: 940px;
     margin: 0 auto;
-    padding-top: 130px;
     
     position: relative;
     z-index: 2;
