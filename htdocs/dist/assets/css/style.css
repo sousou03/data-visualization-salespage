@@ -1478,7 +1478,11 @@ body.no-select
 
     width: auto;
     height: 100%;
-    margin-right: -512px;
+    margin-right: -310px;
+
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
 }
 
 #wrapper.id_top .section02 .img img

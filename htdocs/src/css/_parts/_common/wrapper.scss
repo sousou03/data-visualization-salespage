@@ -125,6 +125,10 @@ body {
 }
 #inner {
 
+  // @media only screen and (max-width: 1024px) {
+  //   min-width: 1024px;
+  //   margin-left: calc((100vw - 1024px) / 2);
+  // }
 
 }
 
@@ -141,5 +145,5 @@ body {
 .inner {
   width: 940px;
   margin: 0 auto;
-
+  
 }
