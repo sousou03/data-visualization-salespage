@@ -1474,10 +1474,11 @@ body.no-select
 {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 50%;
 
     width: auto;
     height: 100%;
+    margin-right: -512px;
 }
 
 #wrapper.id_top .section02 .img img
@@ -1507,7 +1508,7 @@ body.no-select
     top: 0;
     left: 0;
 
-    width: 512px;
+    width: 50%;
     height: 100%;
 
     background: #fff;
@@ -1688,7 +1689,7 @@ body.no-select
     top: 0;
     left: 0;
 
-    width: 512px;
+    width: 50%;
     height: 100%;
 
     background: #fff;
