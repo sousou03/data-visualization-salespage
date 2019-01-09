@@ -5,5 +5,36 @@
 -------------------------------------------------------------------------------- */
 #footer {
 
+  background: #232323;
+  
+  .inner {
+    padding: 38px 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .f_logo {
+    img {
+      width: 160px;
+      height: 40px;
+    }
+  }
+
+  .box {
+    
+    .list {
+      align-items: center;
+      margin-bottom: 12px;
+      justify-content: flex-end;
+      
+      .item:nth-child(2) {
+        width: 1px;
+        height: 10px;
+        background: #fff;
+        margin: 0 10px;
+        margin-top: -1px;
+      }
+    }
+  }
 
 }

@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* --------------------------------------------------------------------------------
+*
+*   section05
+*
+-------------------------------------------------------------------------------- */
+.section05 {
+
+  border-top: 2px solid;
+  position: relative;
+  
+  .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    width: 512px;
+    height: 100%;
+    background: #fff;
+  }
+
+  .block {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 130px;
+    
+    position: relative;
+    z-index: 2;
+    
+    .subTit {
+      margin-bottom: 18px;
+    }
+    .tit {
+      margin-bottom: 40px;
+    }
+
+    .text01 {
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 2.2px;
+      margin-bottom: 15px;
+    }
+    .text02 {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 2.09px;
+      line-height: 28px;
+      margin-bottom: 35px;
+      width: 440px;
+    }
+  }
+
+  .more {
+
+    display: flex;
+    align-items: center;
+    margin-left: 320px;
+    
+    .bar {
+      width: 50px;
+      height: 2px;
+      background-color: #000;
+      
+      margin-right: 7px;
+      margin-top: -4px;
+    }
+  }
+
+}

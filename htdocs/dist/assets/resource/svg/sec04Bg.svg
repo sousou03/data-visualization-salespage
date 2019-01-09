@@ -1,0 +1,17 @@
+<svg width="1024px" height="728px" viewBox="0 0 1024 728" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="79.0081992%" cy="18.8114289%" fx="79.0081992%" fy="18.8114289%" r="117.883108%" gradientTransform="translate(0.790082,0.188114),scale(0.710938,1.000000),rotate(146.424261),translate(-0.790082,-0.188114)" id="radialGradient-1">
+            <stop stop-color="#1432B5" offset="0%"></stop>
+            <stop stop-color="#020334" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="デザイン" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.599999964">
+        <g id="design" transform="translate(0.000000, -2159.000000)" fill="url(#radialGradient-1)">
+            <g id="Group-8" transform="translate(0.000000, 2159.000000)">
+                <rect id="Rectangle-Copy-2" x="0" y="0" width="1024" height="728"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
