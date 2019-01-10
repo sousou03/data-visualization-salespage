@@ -12,7 +12,7 @@ gulp.task('concatJSLibs', ()=>{
     var src = [
                 // PATH.src.js + 'libs/util/modernizr.js',
                 // PATH.src.js + 'libs/util/dat.gui.min.js',
-                PATH.src.js + 'libs/util/Stats.js',
+                // PATH.src.js + 'libs/util/Stats.js',
 
                 PATH.src.js + 'libs/jquery/jquery.min.js',
                 // PATH.src.js + 'libs/jquery/jquery_slim.min.js',

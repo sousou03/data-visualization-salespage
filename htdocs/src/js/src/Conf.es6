@@ -20,7 +20,7 @@ export default class Conf {
     // ログ出力, パラメータ, Stars
     this.LOG = true;
     this.PARAM = true;
-    this.Profiler = false;
+    this.Profiler = true;
     this.LOADING = true;
     this.OPENING = false;
     this.EFFECT = false;

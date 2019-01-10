@@ -5,6 +5,7 @@
 //--------------------------------------------------
 
 import Base from '_MyLibs/Util/Base.es6';
+import Stats from 'stats.js';
 
 export default class Profiler extends Base {
 
