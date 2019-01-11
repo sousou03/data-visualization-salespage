@@ -16,7 +16,7 @@ export default class Controller {
 
     this.setup();
     this.setEvents();
-      
+
   }
 
   setup() {
@@ -25,13 +25,13 @@ export default class Controller {
     gb.pageID = $('body').attr('id');
 
     // UrlParam パラメータ調整用
-    gb.urlp = new UrlParamMgr(); 
+    // gb.urlp = new UrlParamMgr();
 
     // デバイス確認
     gb.je = new JudgeEnvironment();
 
-    if (gb.conf.Profiler) new Profiler(); // Profiler
-   
+    if (gb.conf.Profiler) new Profiler
+
   }
 
   setEvents() {

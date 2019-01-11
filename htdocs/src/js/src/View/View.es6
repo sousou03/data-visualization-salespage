@@ -7,9 +7,6 @@ import Base from '_MyLibs/Util/Base.es6';
 
 import Sns from './Func/Sns.es6';
 
-import Responsive from './UI/Layout/ResponsiveSwitchImg.es6';
-import Size from './UI/Layout/Size.es6';
-import Clone from './UI/Layout/Clone.es6';
 import UIController from './UI/Controller.es6';
 
 export default class ViewCommon extends Base {
@@ -38,8 +35,7 @@ export default class ViewCommon extends Base {
 
     // new Responsive();
 
-    // gb.f.SPH($('#wrapper, .section01, .slider, #hagaki_modal .inner'));
-    // gb.f.SPH($('.section01, .slider, #hagaki_modal .inner'));
+    gb.f.SPH($('.section01'));
 
     // ------------------------------------------------------------
     //  Util
@@ -56,23 +52,12 @@ export default class ViewCommon extends Base {
     // ------------------------------------------------------------
     //  ui
     // ------------------------------------------------------------
-    // this.uic = new UIController();
+    this.uic = new UIController();
 
     // ------------------------------------------------------------
     // timeline
     // ------------------------------------------------------------
-    // var cnt = 0;
-    // var len = 4;
-    // for (var i = 0; i < len; i++) {
-    //   var img = new Image();
-    //   img.onload = ()=>{
-    //     cnt++;
-    //     log(cnt);
-    //     if(cnt==len) this.uic.timeline();
-    //   }
-    //   img.src = 'https://sahara.jp/wp/wp-content/themes/sahara2017/img/aisaretiger/img0'+(i+1)+'.jpg';
-    // }
-    // this.uic.timeline();
+
     
   }
 

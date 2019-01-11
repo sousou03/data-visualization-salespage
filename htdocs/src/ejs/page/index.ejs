@@ -10,19 +10,23 @@
 <body id="<%- page %>" class="">
 
 <div id="wrapper" class="id_<%- page %>">
-<div id="inner">
-
-	<%- include(rootPATH + 'parts/common/_header', {page:page, PATH: PATH}); %>
-
+<div id="inner">  
+  
   <div class="canvasWrap"></div>
 
-  <%- include(contentsPATH + '_section01', {page:page, PATH: PATH}); %>
-  <%- include(contentsPATH + '_section02', {page:page, PATH: PATH}); %>
-  <%- include(contentsPATH + '_section03', {page:page, PATH: PATH}); %>
-  <%- include(contentsPATH + '_section04', {page:page, PATH: PATH}); %>
-	<%- include(contentsPATH + '_section05', {page:page, PATH: PATH}); %>
+  <div class="contents">
 
-	<%- include(rootPATH + 'parts/common/_footer', {page:page, PATH: PATH}); %>
+  	<%- include(rootPATH + 'parts/common/_header', {page:page, PATH: PATH}); %>
+
+    <%- include(contentsPATH + '_section01', {page:page, PATH: PATH}); %>
+    <%- include(contentsPATH + '_section02', {page:page, PATH: PATH}); %>
+    <%- include(contentsPATH + '_section03', {page:page, PATH: PATH}); %>
+    <%- include(contentsPATH + '_section04', {page:page, PATH: PATH}); %>
+  	<%- include(contentsPATH + '_section05', {page:page, PATH: PATH}); %>
+
+  	<%- include(rootPATH + 'parts/common/_footer', {page:page, PATH: PATH}); %>
+
+  </div>
 
 </div>
 </div>

@@ -26,7 +26,7 @@ gulp.task('concatJSLibs', ()=>{
                 // PATH.src.js + 'libs/canvas/preloadjs-0.6.1.min.js',
                 // PATH.src.js + 'libs/other/processing.js',
 
-                // PATH.src.js + 'libs/canvas/3D/three.min.js',
+                PATH.src.js + 'libs/canvas/3D/three.min.js',
                 // PATH.src.js + 'libs/canvas/3D/TrackballControls.js',
                 // PATH.src.js + 'libs/canvas/3D/font/**/*.js',
                 // PATH.src.js + 'libs/canvas/3D/postprocessing/EffectComposer.js',
@@ -39,8 +39,8 @@ gulp.task('concatJSLibs', ()=>{
                 PATH.src.js + 'libs/tween/TweenMax.min.js',
                 // PATH.src.js + 'libs/tween/DrawSVGPlugin.min.js',
                 PATH.src.js + 'libs/tween/CustomEase.js',
-                // PATH.src.js + 'libs/tween/ImprovedNoise.js',
-                // PATH.src.js + 'libs/tween/perlin.js',
+                PATH.src.js + 'libs/tween/ImprovedNoise.js',
+                PATH.src.js + 'libs/tween/perlin.js',
 
                 // PATH.src.js + 'libs/physics/p2.min.js',
 

@@ -11,6 +11,7 @@
   width: 100%;
   
   z-index: 5;
+  // transform: translate3d(0,0,0);
 
   .inner {
     align-items: center;
@@ -20,6 +21,8 @@
     .menu {
       .item {
         margin-right: 40px;
+        
+        cursor: pointer;
       }
     }
   }

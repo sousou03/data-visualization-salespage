@@ -7,10 +7,14 @@
 
   background: #232323;
   
+  position: relative;
+  z-index: 2;
+  
   .inner {
     padding: 38px 0;
     justify-content: space-between;
     align-items: center;
+    
   }
   
   .f_logo {
